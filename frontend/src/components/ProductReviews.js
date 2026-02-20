@@ -16,6 +16,7 @@ const ProductReviews = ({ productId, user }) => {
 
   useEffect(() => {
     loadReviews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId]);
 
   const loadReviews = async () => {

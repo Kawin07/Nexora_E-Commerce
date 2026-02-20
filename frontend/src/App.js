@@ -16,7 +16,7 @@ import * as api from './services/api';
 import './App.css';
 
 function App() {
-  const [products, setProducts] = useState([]);
+  const [, setProducts] = useState([]);
   const [cart, setCart] = useState(null);
   const [receipt, setReceipt] = useState(null);
   const [user, setUser] = useState(null);

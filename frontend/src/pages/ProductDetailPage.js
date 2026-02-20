@@ -17,6 +17,7 @@ const ProductDetailPage = ({ onAddToCart, user }) => {
   useEffect(() => {
     loadProduct();
     loadSimilarProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const loadProduct = async () => {

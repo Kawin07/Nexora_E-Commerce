@@ -8,6 +8,7 @@ const RecentlyViewed = ({ currentProductId }) => {
 
   useEffect(() => {
     loadRecentlyViewed();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentProductId]);
 
   const loadRecentlyViewed = () => {

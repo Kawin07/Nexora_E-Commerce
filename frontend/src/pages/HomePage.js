@@ -14,6 +14,7 @@ const HomePage = ({ onAddToCart, onToggleWishlist, wishlistItems }) => {
 
   useEffect(() => {
     loadProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
 
   const loadProducts = async () => {
