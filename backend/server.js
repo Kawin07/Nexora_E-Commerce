@@ -21,12 +21,12 @@ app.use('/api/wishlist', require('./routes/wishlist'));
 app.use('/api/reviews', require('./routes/reviews'));
 app.use('/api/ai', require('./routes/ai'));
 
-// Health check
+
 app.get('/api/health', (req, res) => {
   res.json({ status: 'Server is running' });
 });
 
-// Error handling middleware
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ 
